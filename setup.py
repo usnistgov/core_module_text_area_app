@@ -22,7 +22,7 @@ chdir(normpath(join(abspath(__file__), pardir)))
 
 setup(
     name="core_module_text_area_app",
-    version="1.0.0-rc1",
+    version="1.0.0-rc2",
     description="Text Area module for the parser core project",
     long_description=long_desc,
     author="NIST IT Lab",
