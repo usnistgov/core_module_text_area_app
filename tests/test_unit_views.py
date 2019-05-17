@@ -5,6 +5,8 @@ from unittest.case import TestCase
 from django.http.request import HttpRequest
 
 from core_module_text_area_app.views.views import TextAreaModule
+from xml_utils.xsd_tree.operations.xml_entities import XmlEntities
+
 
 
 class TestTextAreaModuleRetrieveData(TestCase):
@@ -67,6 +69,7 @@ class TestTextAreaModuleRenderData(TestCase):
         request = HttpRequest()
         data = 'dummy text'
         my_module = TextAreaModule()
+        my_module.data_xml_entities = XmlEntities()
         my_module.data = data
         # Act
         result = my_module._render_data(request)
