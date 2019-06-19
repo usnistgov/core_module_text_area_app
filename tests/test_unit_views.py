@@ -8,7 +8,6 @@ from core_module_text_area_app.views.views import TextAreaModule
 from xml_utils.xsd_tree.operations.xml_entities import XmlEntities
 
 
-
 class TestTextAreaModuleRetrieveData(TestCase):
 
     def test_text_area_module_retrieve_data_returns_element_if_data_given(self):

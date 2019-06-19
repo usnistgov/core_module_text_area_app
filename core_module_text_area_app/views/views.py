@@ -1,7 +1,9 @@
 """ Text Area module
 """
 import re
+
 from django.template import loader
+
 from core_module_text_area_app.settings import AUTO_ESCAPE_XML_ENTITIES
 from core_parser_app.tools.modules.views.builtin.textarea_module import AbstractTextAreaModule
 from xml_utils.xsd_tree.operations.xml_entities import XmlEntities
