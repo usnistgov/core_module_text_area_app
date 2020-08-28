@@ -13,7 +13,7 @@ from xml_utils.xsd_tree.operations.xml_entities import XmlEntities
 
 class TextAreaModule(AbstractTextAreaModule):
     def _retrieve_data(self, request):
-        """ Retrieve module's data
+        """Retrieve module's data
 
         Args:
             request:
@@ -40,7 +40,7 @@ class TextAreaModule(AbstractTextAreaModule):
         return data
 
     def _render_data(self, request):
-        """ Return module's data rendering
+        """Return module's data rendering
 
         Args:
             request:
