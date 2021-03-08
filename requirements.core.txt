@@ -1,2 +1,2 @@
-core-parser-app==1.14.*
+core-parser-app==1.15.*
 xml-utils==1.12.*
