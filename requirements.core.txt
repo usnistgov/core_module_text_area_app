@@ -1,2 +1,2 @@
 core-parser-app==2.0.0-beta1
-xml-utils==1.17.*
+xml-utils==1.18.*
