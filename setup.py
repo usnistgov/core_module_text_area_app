@@ -1,3 +1,6 @@
+""" Setup core module text area app
+"""
+
 from os import chdir, pardir
 from os.path import join, exists, dirname, normpath, abspath
 
