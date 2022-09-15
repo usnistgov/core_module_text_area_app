@@ -1,3 +1,6 @@
+""" Setup core module text area app
+"""
+
 from os import chdir, pardir
 from os.path import join, exists, dirname, normpath, abspath
 
@@ -23,7 +26,7 @@ chdir(normpath(join(abspath(__file__), pardir)))
 
 setup(
     name="core_module_text_area_app",
-    version="1.21.0",
+    version="2.0.0-beta2",
     description="Text Area module for the parser core project",
     long_description=long_desc,
     author="NIST IT Lab",

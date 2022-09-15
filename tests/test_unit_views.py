@@ -4,12 +4,16 @@ from unittest.case import TestCase
 
 from django.http.request import HttpRequest
 
-from core_module_text_area_app.views.views import TextAreaModule
 from xml_utils.xsd_tree.operations.xml_entities import XmlEntities
+from core_module_text_area_app.views.views import TextAreaModule
 
 
 class TestTextAreaModuleRetrieveData(TestCase):
+    """Test Text Area Module Retrieve Data"""
+
     def test_text_area_module_retrieve_data_returns_element_if_data_given(self):
+        """test_text_area_module_retrieve_data_returns_element_if_data_given"""
+
         # Arrange
         request = HttpRequest()
         data = "dummy text"
@@ -23,6 +27,8 @@ class TestTextAreaModuleRetrieveData(TestCase):
         self.assertEqual(True, result == data)
 
     def test_text_area_module_retrieve_data_returns_empty_if_no_data_given(self):
+        """test_text_area_module_retrieve_data_returns_empty_if_no_data_given"""
+
         # Arrange
         request = HttpRequest()
         request.method = "GET"
@@ -35,6 +41,8 @@ class TestTextAreaModuleRetrieveData(TestCase):
     def test_text_area_module_retrieve_data_returns_element_if_selected_data_given(
         self,
     ):
+        """test_text_area_module_retrieve_data_returns_element_if_selected_data_given"""
+
         # Arrange
         request = HttpRequest()
         label = "descritpion"
@@ -52,6 +60,8 @@ class TestTextAreaModuleRetrieveData(TestCase):
     def test_text_area_module_retrieve_data_returns_empty_if_no_selected_data_given(
         self,
     ):
+        """test_text_area_module_retrieve_data_returns_empty_if_no_selected_data_given"""
+
         # Arrange
         request = HttpRequest()
         request.method = "POST"
@@ -63,7 +73,11 @@ class TestTextAreaModuleRetrieveData(TestCase):
 
 
 class TestTextAreaModuleRenderData(TestCase):
+    """Test Text Area Module Render Data"""
+
     def test_text_area_module_render_data_returns_always_empty(self):
+        """test_text_area_module_render_data_returns_always_empty"""
+
         # Arrange
         request = HttpRequest()
         data = "dummy text"

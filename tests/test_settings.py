@@ -1,3 +1,6 @@
+""" Test settings
+"""
+
 SECRET_KEY = "fake-key"
 
 INSTALLED_APPS = [
@@ -10,6 +13,8 @@ INSTALLED_APPS = [
     "django.contrib.sites",
     # Local apps
     "tests",
+    "core_main_app",
+    "core_parser_app",
 ]
 
 MIDDLEWARE = (
@@ -34,3 +39,5 @@ TEMPLATES = [
         },
     },
 ]
+
+CELERYBEAT_SCHEDULER = "django_celery_beat.schedulers:DatabaseScheduler"
