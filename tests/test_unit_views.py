@@ -11,7 +11,9 @@ from core_module_text_area_app.views.views import TextAreaModule
 class TestTextAreaModuleRetrieveData(TestCase):
     """Test Text Area Module Retrieve Data"""
 
-    def test_text_area_module_retrieve_data_returns_element_if_data_given(self):
+    def test_text_area_module_retrieve_data_returns_element_if_data_given(
+        self,
+    ):
         """test_text_area_module_retrieve_data_returns_element_if_data_given"""
 
         # Arrange
@@ -26,7 +28,9 @@ class TestTextAreaModuleRetrieveData(TestCase):
         result = my_module._retrieve_data(request)
         self.assertEqual(True, result == data)
 
-    def test_text_area_module_retrieve_data_returns_empty_if_no_data_given(self):
+    def test_text_area_module_retrieve_data_returns_empty_if_no_data_given(
+        self,
+    ):
         """test_text_area_module_retrieve_data_returns_empty_if_no_data_given"""
 
         # Arrange

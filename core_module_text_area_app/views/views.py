@@ -53,7 +53,11 @@ class TextAreaModule(AbstractTextAreaModule):
         # search the XML predefined entities, to display warning if it needed / we add pre escaped search too
         if (
             self.data_xml_entities.number_of_subs_made > 0
-            or len(re.findall(r"((&amp;)|(&gt;)|(&lt;)|(&apos;)|(&quot;))", self.data))
+            or len(
+                re.findall(
+                    r"((&amp;)|(&gt;)|(&lt;)|(&apos;)|(&quot;))", self.data
+                )
+            )
             > 0
         ):
             return loader.get_template(
