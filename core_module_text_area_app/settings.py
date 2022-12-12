@@ -11,3 +11,9 @@ if not settings.configured:
 AUTO_ESCAPE_XML_ENTITIES = getattr(settings, "AUTO_ESCAPE_XML_ENTITIES", True)
 """ bool: enable or not the auto escape of the XML predefined entities
 """
+
+ENABLE_XML_ENTITIES_TOOLTIPS = getattr(
+    settings, "ENABLE_XML_ENTITIES_TOOLTIPS", True
+)
+""" boolean: enable the xml entities warning tooltip on the GUI.
+"""
