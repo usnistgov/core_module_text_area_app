@@ -1,5 +1,6 @@
 """ Text Area module
 """
+
 import re
 
 from django.template import loader
