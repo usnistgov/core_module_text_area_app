@@ -1,5 +1,4 @@
-""" Module Text Area testing
-"""
+"""Module Text Area testing"""
 
 from unittest.case import TestCase
 

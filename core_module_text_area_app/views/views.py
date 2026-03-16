@@ -1,5 +1,4 @@
-""" Text Area module
-"""
+"""Text Area module"""
 
 import re
 

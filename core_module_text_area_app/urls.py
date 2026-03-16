@@ -1,5 +1,4 @@
-""" Url router for the Text Area module
-"""
+"""Url router for the Text Area module"""
 
 from django.urls import re_path
 
