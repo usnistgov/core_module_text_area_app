@@ -1,12 +1,7 @@
 """Text Area module"""
 
-import re
-
-from django.template import loader
-
 from core_module_text_area_app.settings import (
     AUTO_ESCAPE_XML_ENTITIES,
-    ENABLE_XML_ENTITIES_TOOLTIPS,
 )
 from core_parser_app.tools.modules.views.builtin.textarea_module import (
     AbstractTextAreaModule,
@@ -53,22 +48,4 @@ class TextAreaModule(AbstractTextAreaModule):
         Returns:
 
         """
-        # if tooltips are disabled, return empty message
-        if not ENABLE_XML_ENTITIES_TOOLTIPS:
-            return ""
-
-        # search the XML predefined entities, to display warning if needed / we add pre escaped search too
-        if (
-            self.data_xml_entities.number_of_subs_made > 0
-            or len(
-                re.findall(
-                    r"((&amp;)|(&gt;)|(&lt;)|(&apos;)|(&quot;))", self.data
-                )
-            )
-            > 0
-        ):
-            return loader.get_template(
-                "core_module_text_area_app/predefined_entities_warning.html"
-            ).template.source
-
         return ""
